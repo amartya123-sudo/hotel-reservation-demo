@@ -27,6 +27,14 @@ public type User record {
     string mobileNumber;
 };
 
+public type ReservationRequest record {
+    string checkinDate;
+    string checkoutDate;
+    int rate;
+    User user;
+    string roomType;
+};
+
 type NewReservationRequest record {
     string checkinDate;
     string checkoutDate;
